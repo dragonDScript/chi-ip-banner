@@ -1,7 +1,7 @@
 # Chi Ip Banner
 Chi ip banner is a chi middleware that bans some ips from your Chi http server.
 
-It reads a `.txt` file in your project's root, calles banip.txt, splits that file with linefeeds, and bans those ips. E.g.
+It reads a `.txt` file in your project's root, called banip.txt, splits that file with linefeeds, and bans those ips. E.g.
 ```
 0.0.0.0
 127.0.0.1
