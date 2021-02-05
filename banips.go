@@ -13,7 +13,7 @@ import (
 func BanIPs(next http.Handler) http.Handler {
 	file := readtxtfile()
 	r := chi.NewRouter()
-	r.HandleFunc("*", func(w http.ResponseWriter, r *http.Request) {
+	r.HandleFunc("/*", func(w http.ResponseWriter, r *http.Request) {
 		ips := strings.Split(file, "\n")
 		for ip := 0; ip < len(ips); ip++ {
 			if ips[ip] == r.RemoteAddr {
